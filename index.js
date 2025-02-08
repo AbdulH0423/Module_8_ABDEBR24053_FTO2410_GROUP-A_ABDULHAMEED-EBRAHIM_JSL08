@@ -64,6 +64,19 @@ console.log("branch B info:", branchB.getBranchInfo());
 //    - Verify that `branchA` and `branchB` are both referring to the same instance by comparing them using `===`.
 console.log("Are branchA and branchB the same?", branchA === branchB)
 
+
+branchA.updateBranchInfo({
+    name : "Main Branch" , 
+    location : "South hills",
+    manager : "Quaina Petersen",
+});
+
+
+console.log("updated Branch A info:", branchA.getBranchInfo());
+
+console.log("Updated branchB info(Should be the same as A):" , branchB.getBranchInfo());
+
+
 // This pseudo-code provides a step-by-step explanation of how to implement the Singleton Pattern for managing a single instance of the `BankBranch` class throughout the application, ensuring that multiple instances refer to the same object.
 
 // NOTES:
